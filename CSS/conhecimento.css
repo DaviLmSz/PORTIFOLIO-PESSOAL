@@ -47,8 +47,3 @@
     color: var(--paragraph);
   }
   
-  footer p {
-    line-height: 2;
-  
-    margin-bottom: 3.2rem;
-  }
