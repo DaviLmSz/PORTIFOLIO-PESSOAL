@@ -75,17 +75,17 @@ span {
   color: var(--hover-color);
 }
 
-.listanav {
+.navlist {
   display: flex;
 }
 
-.listanav a {
+.navlist a {
   color: var(--text-color);
   font-weight: 500;
   padding: 10px 20px;
 }
 
-.listanav a:hover {
+.navlist a:hover {
   color: var(--hover-color);
   text-shadow: 0 0 10px rgba(18, 247, 255, 0.6),
     0 0 20px rgba(18, 247, 255, 0.6), 0 0 30px rgba(18, 247, 255, 0.6),
@@ -310,6 +310,13 @@ section {
   font-weight: 700;
   font-size: var(--normal-font);
 }
+
+.sobremim-content h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
 .sobremim-content p {
   color: #fdfdfd;
   font-weight: 300;
@@ -550,7 +557,7 @@ footer a i {
 
 @media (max-width: 991) {
   header,
-  header.sticky{
+  header.sticky {
     padding: 15px 5%;
   }
   footer {
@@ -565,7 +572,7 @@ footer a i {
   root {
     --big-font: 2.2rem;
     --normal-font: 1.8rem;
-    --neon-box-shadow: 0 0 .8rem #dddddd;
+    --neon-box-shadow: 0 0 0.8rem #dddddd;
     --h2-font: 3rem;
   }
   .home-content {
@@ -577,16 +584,16 @@ footer a i {
 }
 
 @media screen and (max-width: 768px) {
-  #menu-icon{
+  #menu-icon {
     display: block;
     transition: all 0.4s ease;
   }
 
-  #menu-icon .bx-x{
+  #menu-icon.bx-x {
     transform: rotate(-180deg);
   }
 
-  .listanav {
+  .navlist {
     display: flex;
     position: absolute;
     top: -1000px;
@@ -596,14 +603,14 @@ footer a i {
     background: var(--bg-color);
     text-align: left;
     padding: 0 5%;
-    transition: all .45s ease;
+    transition: all 0.45s ease;
   }
-  .listanav a {
+  .navlist a {
     display: block;
     padding-bottom: 1rem;
     font-size: 1rem;
   }
-  .listanav.open {
+  .navlist.open {
     top: 100%;
   }
   .home {
